@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+
+{% block title %}Home |{% endblock title %}
+
+{% block body%}
+<div class ="container-fluid px-0">
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+    {% comment %} For the Carousel Images {% endcomment %}
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+    {% comment %} (1st) RIngs) Carousel Image {% endcomment %}
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://source.unsplash.com/b9KLHJhjyUw/1600x600" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+        </div>
+
+        {% comment %} (2nd) Earrings Carousel Image {% endcomment %}
+        <div class="carousel-item">
+            <img src="https://source.unsplash.com/UZFnEbvwkzE/1600x600" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+        </div>
+
+        {% comment %} (3rd) Bracelets Carousel Image {% endcomment %}
+        <div class="carousel-item">
+            <img src="https://source.unsplash.com/NnD1jMzybbE/1600x600" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+        </div>
+      </div>
+
+    {% comment %} Carousel Buttons {% endcomment %}
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+    
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+      </div>
+
+  </div>
+</div> 
+
+
+{% comment %} For the Bracelet Thumbnail {% endcomment %}
+<div class="container my-3">
+  <hr>
+  <h4 class= "my-2 text-center"> Select from any Assessory</h4>
+  <hr>
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+      <div class="card shadow-sm">
+        {% comment %} Inserting the bracelet image into the thumbnail {% endcomment %}
+        <img src="https://source.unsplash.com/69wZpIbgMgE/1600x900" class="d-block w-100" alt="...">
+
+
+        <div class="card-body">
+          <h3> Bracelets </h3>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+              <a href="/bracelets"
+                <button type="button" class="btn btn-sm btn-outline-secondary" href="/bracelets.html">View</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
+
+
+    <div class="col">
+      <div class="card shadow-sm">
+       {% comment %} Inserting the images into thumbnails {% endcomment %}
+        <img src="https://source.unsplash.com/OibaEuEfpeg/1600x900" class="d-block w-100" alt="...">
+
+        <div class="card-body">
+          <h3> Earrings </h3>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="/earrings"
+                  <button type="button" class="btn btn-sm btn-outline-secondary" href="/earrings.html">View</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card shadow-sm">
+         {% comment %} Inserting the images into thumbnails {% endcomment %}
+          <img src="https://source.unsplash.com/Uyhyd0zoeLc/1600x900" class="d-block w-100" alt="...">
+
+          <div class="card-body">
+            <h3> Rings </h3>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="/rings"
+                    <button type="button" class="btn btn-sm btn-outline-secondary" href="rings.html" >View</button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+</div>
+
+{% endblock body %}
