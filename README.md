@@ -1,5 +1,5 @@
 # Accessorize
-Self-made website (with limited functionality for now)
+Self-made website for a jewellery brand.
 
 # What I Learned
 
